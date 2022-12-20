@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Screen fix</title>
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #000;
+        }
+        canvas {
+            width: 256px;
+            height: 256px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body ondrop="dropHandler(event)" ondragover="handleDragOver(event)">
+    <canvas id="canvas" draggable="true" ></canvas>
+</body>
+<script src="screen-fix.js"></script>
+</html>
